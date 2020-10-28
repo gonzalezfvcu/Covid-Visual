@@ -32,7 +32,7 @@ function Globe3d() {
         })
     },[])
 
-    console.log(lat)
+    //console.log(lat)
       
     return (
         <>

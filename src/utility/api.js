@@ -1,10 +1,10 @@
-import { GEOJSON_URL, CASES_API} from './constant';
+import { GEOJSON_URL, GEOJSON_URL_50, CASES_API} from './constant';
 import axios from 'axios'
 
  export const  getCases = () => {
     return new Promise((resolve,reject) => {
         let countriesWithCovid = [];
-        axios.get(GEOJSON_URL)
+        axios.get(GEOJSON_URL_50)
         .then(res => {
             const countries = res.data;
             axios.get(CASES_API).then(resp => {
